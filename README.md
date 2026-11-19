@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.svg" alt="banner" width="100%">
+</p>
+
 # NetScope
 
 Linux network observer. A cgroup/skb eBPF program parses TCP and UDP packets.
