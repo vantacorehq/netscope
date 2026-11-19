@@ -1,0 +1,17 @@
+[package]
+name = "netscope-ebpf"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+aya-ebpf = { workspace = true }
+netscope-common = { path = "../common" }
+
+[build-dependencies]
+which = "6"
+
+[[bin]]
+name = "netscope"
+path = "src/main.rs"

@@ -1,0 +1,24 @@
+[package]
+name = "netscope"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+aya = { workspace = true }
+anyhow = { workspace = true }
+clap = { workspace = true }
+libc = { workspace = true }
+tokio = { workspace = true }
+crossterm = { workspace = true }
+ratatui = { workspace = true }
+netscope-common = { workspace = true }
+netscope-collector = { path = "../collector" }
+netscope-exporter = { path = "../exporter" }
+netscope-tui = { path = "../tui" }
+
+[build-dependencies]
+anyhow = { workspace = true }
+aya-build = { workspace = true }
+cargo_metadata = "0.19"
